@@ -1,0 +1,9 @@
+@startuml ユースケース図
+left to right direction
+
+actor 販売管理者#DDDDDD;line:black;line.bold;
+rectangle "販売管理システム" as system {
+販売管理者 --> (注文商品を確認する)
+販売管理者 --> (商品の出荷状況を登録する)
+}
+@enduml
