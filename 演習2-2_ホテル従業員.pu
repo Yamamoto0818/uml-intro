@@ -1,9 +1,7 @@
 @startuml ユースケース図
 rectangle ホテル {
-usecase 従業員
 actor 経営者
 actor ホテル従業員
 }
-従業員 <|--経営者
-従業員 <|--ホテル従業員
+ホテル従業員<|--経営者
 @enduml
