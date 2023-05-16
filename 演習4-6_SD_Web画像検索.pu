@@ -9,16 +9,15 @@ participant ":Webサーバ" as webserver
 participant ":画像サーバ" as server
 
 activate user
-user -> browser : リンクボタンを押す()
+user -> browser : リンクボタンを押す
 activate browser
-browser -> webserver : ファイル名を伝える()
+browser -> webserver : ファイル名を伝える
 activate webserver
-webserver -> server : 該当するファイル名を探す()
+webserver -> server : 該当するファイル名を渡す
 activate server
-webserver <<-- server : 閲覧可能()
-browser <<-- webserver : 画像ファイルを再生()
-user <<-- browser : 閲覧()
-
-    
+server -> server : ファイルを探す
+webserver <<-- server : 画像ファイル
+browser <<-- webserver : 画像ファイルを再生
+user <<-- browser : 画像閲覧
 
 @enduml
