@@ -1,4 +1,4 @@
-@startuml 演習3-4
+@startuml 演習3-4-1
 left to right direction
 object "<u>車リスト2: 車リスト</u>" as k2 {
 車種
