@@ -3,7 +3,7 @@
 hide footbox
 
 skinparam style strictuml /' 厳密なUMLに準拠する'/
-Actor 顧客 as user
+Actor ":顧客" as user
 participant ":ブラウザ" as browser
 participant ":Webサーバ" as webserver
 participant ":画像サーバ" as server
