@@ -1,0 +1,16 @@
+@startuml 演習6-4-2
+    left to right direction 
+    actor 客 as person #DDDDDD;line:black;line.bold;
+    actor ベンダー as bender #DDDDDD;line:black;line.bold;
+    rectangle 自動販売機{
+        usecase (お金を入れる) as text1
+        usecase (ドリンクを取り出す) as text2
+        usecase (ボタンを押す) as text3
+    }
+    person-->text1
+    person-->text3
+    person-->text2
+    text1<--bender
+    text2<--bender
+
+@enduml
